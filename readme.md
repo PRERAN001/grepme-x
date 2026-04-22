@@ -29,11 +29,11 @@ Run without flags for a fast, deterministic structured README. Add `--ai` and it
 
 ```bash
 # Run directly with Node (no install needed)
-node grepme-x.mjs
+node install grepme-x
 
 # Or add to your project scripts in package.json
 "scripts": {
-  "docs": "node grepme-x.mjs"
+  "docs": "grepme-x"
 }
 ```
 
@@ -45,25 +45,25 @@ node grepme-x.mjs
 
 ```bash
 # Structured README (fast, offline, deterministic)
-node grepme-x.mjs
+npm install grepme-x
 
 # Copilot-style AI prose README
-node grepme-x.mjs --ai
+grepme-x --ai
 
 # Pass API key inline (or set ANTHROPIC_API_KEY env var)
-node grepme-x.mjs --ai --key sk-ant-xxxxxxxxxxxx
+grepme-x --ai --key sk-ant-xxxxxxxxxxxx
 
 # Custom output file
-node grepme-x.mjs --output DOCS.md
+grepme-x --output DOCS.md
 
 # Ignore extra directories
-node grepme-x.mjs --ignore tmp,scripts,fixtures
+grepme-x --ignore tmp,scripts,fixtures
 
 # Raw JSON output — pipe into other tools or your own LLM prompt
-node grepme-x.mjs --format json
+grepme-x --format json
 
 # Choose a different Claude model
-node grepme-x.mjs --ai --model claude-sonnet-4-6
+grepme-x. --ai --model claude-sonnet-4-6
 ```
 
 ### CLI Flags
@@ -87,7 +87,7 @@ node grepme-x.mjs --ai --model claude-sonnet-4-6
 Fast, offline, deterministic. Runs regex extraction and renders a markdown document with precise tables, route lists, schema blocks, and env var templates. Same output every run.
 
 ```bash
-node grepme-x.mjs
+grepme-x
 ```
 
 ### `--ai` — Copilot-style prose README
@@ -96,11 +96,11 @@ Runs the same extraction first to get confirmed facts (routes, auth, Docker, env
 
 ```bash
 # With env var (recommended)
-export ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxx
-node grepme-x.mjs --ai
+
+node grepme-x --ai  (openrouter apikey)
 
 # Or inline
-node grepme-x.mjs --ai --key sk-ant-xxxxxxxxxxxx
+grepme-x --ai --key sk-ant-xxxxxxxxxxxx
 ```
 
 The response streams live to your terminal and writes to the output file when complete. If the API call fails for any reason, it automatically falls back to the structured README.
@@ -193,4 +193,4 @@ MIT
 
 ---
 
-_Generated with ❤️ by [grepme-x](https://github.com/yourusername/grepme-x)_
+_Generated with ❤️ by [grepme-x]
