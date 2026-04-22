@@ -5,7 +5,11 @@
 ## Install
 
 ```bash
+# Local project install
 npm install
+
+# Optional: global install from this repo
+npm install -g .
 ```
 
 ## Run
@@ -35,7 +39,7 @@ node index.js [options]
 | `--output` | `-o` | `grepme-X.md` | Output file name |
 | `--ignore` | `-i` | `""` | Comma-separated extra directories to ignore |
 | `--format` | `-f` | `markdown` | Output format: `markdown` or `json` |
-| `--ai <OPENROUTER_API_KEY>` | `-a` (`-ai` legacy alias, normalized to `--ai`) | — | Enable AI descriptions for controllers via OpenRouter |
+| `--ai <OPENROUTER_API_KEY>` | `-a` (preferred), `-ai` (alias) | — | Enable AI descriptions for controllers via OpenRouter |
 | `--help` | `-h` | — | Show help |
 
 ## Examples
