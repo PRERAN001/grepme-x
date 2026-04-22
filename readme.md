@@ -80,4 +80,4 @@ OPENROUTER_MODEL=gpt-3.5-turbo
 ## Branch note
 
 This README is for the **CLI tool in `main` branch**.  
-For the website branch documentation, see `README.md`.
+For website docs, see `README.md` in the `grepme-x-website` branch.

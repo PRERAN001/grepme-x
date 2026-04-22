@@ -42,4 +42,4 @@ src/
 ## Branch note
 
 This README is for the **website branch**.  
-For the CLI tool documentation used in the `main` branch, see `readme.md` in this repository.
+For the CLI tool documentation used in the `main` branch, see `readme.md` in the `main` branch.
